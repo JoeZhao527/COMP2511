@@ -1,0 +1,5 @@
+Adapter pattern
+
+The	adapter	pattern	allows the interface of	an existing class to be	used as	another
+interface, suitable for a client class.	The adapter	pattern	is often used to make existing classes
+(APIs) work	with a client class	without	modifying their	source code.

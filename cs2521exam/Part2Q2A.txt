@@ -1,0 +1,6 @@
+Use observer pattern. 
+
+This is an event handling system, where:
+"the heart rate of a patient is out of the required range" is the event
+"doctors" and "nurses" are the observers
+"patients" are the objects

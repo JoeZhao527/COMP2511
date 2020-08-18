@@ -1,0 +1,27 @@
+package part2Q1;
+
+public class Engineer extends Employee {
+
+    private double bonus;
+    /*
+    public Engineer(String title, String firstName, String lastName, int quota, double bonus) {
+        super(title, firstName, lastName, quota);
+        this.bonus = bonus;
+    }
+    */
+    public Engineer(String title, String name, int quota, double bonus) {
+        super(title, name, quota);
+        this.bonus = bonus;
+    }
+    public double calculateSalary() {
+        // this is a duplicate code, inline temporary variable
+        /* previous code
+        double totalSal;
+        totalSal = super.getBaseSalary() + bonus
+                 + super.calculateParkingFringeBenefits() - super.calculateTax();
+        return totalSal;
+        */
+        return super.getBaseSalary() + bonus
+             + super.calculateParkingFringeBenefits() - super.calculateTax();
+    }
+}
